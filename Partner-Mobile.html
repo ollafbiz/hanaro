@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>파트너 신청 | 하나로</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<script>(function(){var small=matchMedia('(max-width:767px)').matches;if(small!==true){location.replace('Partner.html'+location.search+location.hash)}})();</script>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit}
+a:hover{opacity:.85}
+</style>
+
+</head>
+<body>
+<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6BCB","#2348C7","#0F4FA8"]},"$preview":{"width":390,"height":3050}}'></div>
+<template id="dc-tpl">
+
+<div style="--accent: {{accent}}; width: 390px; max-width: 100%; margin: 0 auto; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
+  <button type="button" onClick="{{reload}}" data-review-toggle="true" aria-label="새로고침" style="position: fixed; left: 18px; bottom: 18px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; gap: 6px; background: #1E2420; color: #FFFFFF; border: 0; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.300 5.700"></path><path d="M20 4v7h-7"></path></svg>새로고침</button>
+
+  <a href="Partner.html" data-review-toggle="true" style="position: fixed; top: 4px; right: 16px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 14px; display: flex; align-items: center; background: #1E2420; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none">PC로 보기</a>
+  <header style="border-bottom: 1px solid #E3E6EB">
+    <div style="height: 56px; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center">
+      <a href="index-Mobile.html" style="padding: 10px 0; font-size: 20px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
+    </div>
+    <form role="search" style="margin: 0 20px; height: 48px; box-sizing: border-box; display: flex; border: 2px solid var(--accent); border-radius: 10px; overflow: hidden">
+      <input type="search" aria-label="혜택과 업체 검색" placeholder="필요하신 서비스, 업종 등을 검색해보세요" style="flex: 1; min-width: 0; padding: 0 12px; border: 0; outline-offset: -2px; font: inherit; font-size: 16px; color: #1E2420; background: #FFFFFF">
+      <button type="button" aria-label="검색" style="width: 48px; display: flex; align-items: center; justify-content: center; background: var(--accent); color: #FFFFFF; border: 0; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.500 16.500L21 21"></path></svg></button>
+    </form>
+    <nav aria-label="카테고리" style="margin-top: 4px; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; white-space: nowrap">
+      <a href="index-Mobile.html" style="padding: 12px 10px; font-size: 15px; font-weight: 500; text-decoration: none">전체서비스</a>
+      <a href="Compare-Mobile.html" style="padding: 12px 10px; font-size: 15px; font-weight: 500; text-decoration: none">인터넷·TV</a>
+      <a href="Review-Mobile.html" style="padding: 12px 10px; font-size: 15px; font-weight: 500; text-decoration: none">계약 인증</a>
+      <a href="Partner-Mobile.html" aria-current="page" style="padding: 12px 10px; font-size: 15px; font-weight: 700; color: var(--accent); text-decoration: none">파트너 신청</a>
+    </nav>
+  </header>
+
+  <main style="padding: 0 0 80px; display: flex; flex-direction: column; align-items: center">
+    <div style="width: 100%; max-width: 960px; display: flex; flex-direction: column; gap: 36px; padding: 20px 20px 0; box-sizing: border-box">
+      <section style="padding: 32px 22px; border-radius: 20px; background: color-mix(in srgb, var(--accent) 11%, white); display: flex; flex-direction: column; gap: 18px">
+        <span style="align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: #FFFFFF; color: var(--accent); font-size: 13px; font-weight: 700">파트너 신청</span>
+        <h1 style="margin: 0; font-size: 28px; line-height: 1.25; font-weight: 700; letter-spacing: -0.03em">하나로와 함께할<br>파트너를 모십니다</h1>
+        <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #3A4454">인터넷·TV부터 이사·청소, 렌트/리스, 웨딩, 인테리어까지. 하나로를 찾는 이용자에게 우리 업체를 소개해 보세요.</p>
+        <span style="font-size: 13px; line-height: 1.6; color: #5F6763">제휴 문의는 이메일로만 받고 있습니다 · klconactkr@gmail.com</span>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em">이런 업체를 찾습니다</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px"><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">인터넷·TV</span><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">이사</span><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">청소</span><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">자동차 렌트/리스</span><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">웨딩</span><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">인테리어·철거</span><span style="padding: 9px 16px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); font-size: 14px; font-weight: 700">설비·배관</span></div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #4A5464">이용자에게 실제로 서비스를 제공하는 업체라면 업종 제한 없이 문의하실 수 있습니다. 위에 없는 업종도 편하게 메일로 문의해 주세요.</p>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em">제휴하면 이렇게 소개됩니다</h2>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px">
+          <div style="padding: 20px; border: 1px solid #E3E6EB; border-radius: 14px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 700">업종별 페이지에 업체 노출</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">해당 업종 페이지에 업체명, 대표 이미지, 혜택 문구가 담긴 카드로 소개됩니다.</span></div>
+          <div style="padding: 20px; border: 1px solid #E3E6EB; border-radius: 14px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 700">제휴 링크로 바로 연결</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">카드를 누른 이용자가 업체의 상담·신청 페이지로 바로 이동합니다.</span></div>
+          <div style="padding: 20px; border: 1px solid #E3E6EB; border-radius: 14px; display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 17px; font-weight: 700">메인 노출은 별도 협의</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">메인 화면의 인기 업체 등 추가 노출은 업체와 협의해 진행합니다.</span></div>
+        </div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em">진행 순서</h2>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 14px">
+          <div style="padding: 20px; border-radius: 14px; background: #F4F6F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--accent); color: #FFFFFF; font-size: 14px; font-weight: 700">1</span><strong style="font-size: 16px; font-weight: 700">메일 문의</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">아래 양식대로 업체 정보를 메일로 보내주세요.</span></div>
+          <div style="padding: 20px; border-radius: 14px; background: #F4F6F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--accent); color: #FFFFFF; font-size: 14px; font-weight: 700">2</span><strong style="font-size: 16px; font-weight: 700">검토 및 회신</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">업체 정보와 제공 서비스를 확인한 뒤 메일로 회신드립니다.</span></div>
+          <div style="padding: 20px; border-radius: 14px; background: #F4F6F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--accent); color: #FFFFFF; font-size: 14px; font-weight: 700">3</span><strong style="font-size: 16px; font-weight: 700">조건 협의</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">노출 방식과 혜택 등 세부 조건을 협의합니다.</span></div>
+          <div style="padding: 20px; border-radius: 14px; background: #F4F6F8; display: flex; flex-direction: column; gap: 8px"><span style="width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--accent); color: #FFFFFF; font-size: 14px; font-weight: 700">4</span><strong style="font-size: 16px; font-weight: 700">등록</strong><span style="font-size: 14px; line-height: 1.6; color: #4A5464">협의가 끝나면 업종 페이지에 업체 카드가 등록됩니다.</span></div>
+        </div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em">메일에 이렇게 적어 보내주세요</h2>
+        <div style="padding: 22px; border: 1px solid #E3E6EB; border-radius: 14px; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; font-weight: 600; color: #5F6763">받는 사람</span><strong style="font-size: 16px; font-weight: 700">klconactkr@gmail.com</strong></div>
+          <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; font-weight: 600; color: #5F6763">메일 제목</span><strong style="font-size: 16px; font-weight: 700">[파트너 제휴 문의] 업체명</strong></div>
+          <div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; font-weight: 600; color: #5F6763">본문에 포함할 내용</span><span style="font-size: 14px; line-height: 1.8; color: #3A4454">업체명 · 업종 · 담당자명/직책 · 연락처 · 홈페이지 또는 소개 링크 · 제공 가능한 혜택(사은품·할인 등) · 기타 문의</span></div>
+        </div>
+      </section>
+
+      <section style="padding: 20px; border-radius: 14px; background: #F4F6F8; display: flex; flex-direction: column; gap: 8px">
+        <strong style="font-size: 14px; font-weight: 700; color: #3A4454">안내사항</strong>
+        <span style="font-size: 13px; line-height: 1.7; color: #5F6763">· 문의는 이메일로만 접수하며, 전화·메신저 문의는 받지 않습니다.<br>· 등록 여부는 업체 정보와 제공 서비스를 확인한 뒤 결정하며, 문의하셨다고 해서 등록이 보장되지는 않습니다.<br>· 허위·과장된 내용이나 확인되지 않는 혜택은 등록할 수 없습니다.<br>· 등록된 업체 카드는 제휴 링크로 표기되며, 하나로는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
+      </section>
+    </div>
+  </main>
+
+  <footer style="margin-top: auto; padding: 32px 20px; background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
+    <strong style="font-size: 12px; font-weight: 600; color: #5F6763">케이엘커넥트</strong>
+    <span>사업자등록번호 305-66-00691<br>개인정보 보호책임자 구자경<br>제휴 및 일반 문의 klconactkr@gmail.com<br>경기도 오산시 대원로 11, 4층 2호</span>
+    <span>본 사이트는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
+    <a href="Privacy-Mobile.html" style="align-self: flex-start; padding: 12px 0; font-weight: 600">개인정보처리방침</a>
+    <a href="Partner-Mobile.html" style="align-self: flex-start; padding: 12px 0; font-weight: 600">파트너 신청</a>
+  </footer>
+
+  <nav aria-label="하단 메뉴" style="position: sticky; bottom: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: #FFFFFF; border-top: 1px solid #E3E6EB">
+    <a href="index-Mobile.html" style="height: 62px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 12px; font-weight: 600; color: #4A5464; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"></path><path d="M6 10v10h12V10"></path><path d="M10 20v-5h4v5"></path></svg>
+      홈
+    </a>
+    <a href="Compare-Mobile.html" style="height: 62px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 12px; font-weight: 600; color: #4A5464; text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.500a15 15 0 0 1 20 0"></path><path d="M5.500 12.500a10 10 0 0 1 13 0"></path><path d="M9 16.200a5 5 0 0 1 6 0"></path><circle cx="12" cy="19.500" r="1"></circle></svg>
+      인터넷 비교
+    </a>
+    <a href="Category-Mobile.html" aria-current="page" style="height: 62px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 12px; font-weight: 700; color: var(--accent); text-decoration: none">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.800 5.200L19 10l-5.200 1.800L12 17l-1.800-5.200L5 10l5.200-1.800z"></path><path d="M19 16v4M17 18h4"></path></svg>
+      생활 혜택
+    </a>
+  </nav>
+</div>
+</template>
+<script src="dc-runtime.js"></script>
+<script>
+
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      reload: () => { const k = Object.keys(this.state || {}); this.setState(k.reduce((o, key) => { o[key] = undefined; return o; }, {})); window.scrollTo(0, 0); },
+      accent: this.props.accent ?? '#068A4C',
+          };
+  }
+}
+
+</script>
+<script>DC.mount(Component);</script>
+</body>
+</html>
