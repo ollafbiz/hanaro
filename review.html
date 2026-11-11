@@ -2,42 +2,48 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>하나로 | 계약 인증</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>(function(){try{var p=location.pathname.replace(/\.html$/,'');if(p===''||p==='/')p='/index';var m=/-m$/.test(p);var small=window.matchMedia('(max-width: 768px)').matches;var to=null;if(small&&!m)to=p+'-m';else if(!small&&m){to=p.slice(0,-2);if(to==='/index')to='/';}if(to)location.replace(to+location.search+location.hash);}catch(e){}})();</script>
-<script src="/support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
+
+<title>계약 인증 | 하나로</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<script>(function(){var small=matchMedia('(max-width:767px)').matches;if(small!==false){location.replace('Review-Mobile.html'+location.search+location.hash)}})();</script>
+
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 body{margin:0}
 a{color:inherit}
 a:hover{opacity:.85}
 </style>
-</helmet>
-<div style="--accent: {{accent}}; width: 100%; min-height: 1580px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
-  <header style="padding: 0 max(20px, calc((100% - 972px) / 2)); border-bottom: 1px solid #E3E6EB">
+
+</head>
+<body>
+<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6BCB","#2348C7","#0F4FA8"]},"$preview":{"width":1440,"height":1580}}'></div>
+<template id="dc-tpl">
+
+<div style="--accent: {{accent}}; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
+  <button type="button" onClick="{{reload}}" data-review-toggle="true" aria-label="새로고침" style="position: fixed; left: 18px; bottom: 18px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; gap: 6px; background: #1E2420; color: #FFFFFF; border: 0; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.300 5.700"></path><path d="M20 4v7h-7"></path></svg>새로고침</button>
+
+  <a href="Review-Mobile.html" data-review-toggle="true" style="position: fixed; top: 18px; right: 18px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; background: #1E2420; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none">모바일로 보기</a>
+  <header style="padding: 0 max(20px, calc((100vw - 1100px) / 2)); border-bottom: 1px solid #E3E6EB">
     <div style="height: 84px; display: flex; align-items: center; gap: 40px">
-      <a href="/" style="font-size: 24px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
+      <a href="index.html" style="font-size: 24px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
       <form role="search" style="flex: 1; max-width: 720px; height: 52px; box-sizing: border-box; display: flex; border: 2px solid var(--accent); border-radius: 999px; overflow: hidden">
         <input type="search" aria-label="혜택과 업체 검색" placeholder="필요하신 서비스, 업종 등을 검색해보세요" style="flex: 1; min-width: 0; padding: 0 22px; border: 0; outline-offset: -2px; font: inherit; font-size: 16px; color: #1E2420; background: #FFFFFF">
         <button type="button" aria-label="검색" style="width: 56px; display: flex; align-items: center; justify-content: center; background: var(--accent); color: #FFFFFF; border: 0; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.500 16.500L21 21"></path></svg></button>
       </form>
     </div>
     <nav aria-label="카테고리" style="margin-left: -16px; display: flex; gap: 4px">
-      <a href="/" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">전체서비스</a>
-      <a href="/compare" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">인터넷·TV</a>
-      <a href="/review" aria-current="page" style="padding: 12px 16px; font-size: 16px; font-weight: 700; color: var(--accent); text-decoration: none">계약 인증</a>
-      <a href="/partner" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">파트너 신청</a>
+      <a href="index.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">전체서비스</a>
+      <a href="Compare.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">인터넷·TV</a>
+      <a href="Review.html" aria-current="page" style="padding: 12px 16px; font-size: 16px; font-weight: 700; color: var(--accent); text-decoration: none">계약 인증</a>
+      <a href="Partner.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">파트너 신청</a>
     </nav>
   </header>
 
   <main style="padding: 28px 0 80px; display: flex; justify-content: center">
     <div style="width: 100%; max-width: 720px; display: flex; flex-direction: column; gap: 22px">
       <div style="display: flex; align-items: center; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid #E3E6EB">
-        <a href="/" aria-label="뒤로" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: #1E2420; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></a>
+        <a href="index.html" aria-label="뒤로" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: #1E2420; text-decoration: none"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></a>
         <h1 style="margin: 0 44px 0 0; flex: 1; text-align: center; font-size: 20px; font-weight: 700">계약 인증</h1>
       </div>
 
@@ -64,7 +70,7 @@ a:hover{opacity:.85}
 
         <div style="display: flex; flex-direction: column; gap: 10px">
         <div style="display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border: 1px solid #E3E6EB; border-radius: 12px">
-          <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; color: #1E2420; cursor: pointer"><input type="checkbox" onChange="{{onA1}}" style="width: 20px; height: 20px; flex: none; accent-color: #068A4C"><span><span style="color: var(--accent)">[필수]</span> 개인정보 수집·이용 및 인증글 이용 동의</span></label>
+          <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; color: #1E2420; cursor: pointer"><input type="checkbox" checked onChange="{{onA1}}" style="width: 20px; height: 20px; flex: none; accent-color: #068A4C"><span><span style="color: var(--accent)">[필수]</span> 개인정보 수집·이용 및 인증글 이용 동의</span></label>
           <details><summary style="font-size: 12px; color: #5F6763; cursor: pointer">내용 보기</summary><div style="margin-top: 8px; font-size: 12px; line-height: 1.7; color: #5F6763">· 수집 항목: 성명, 연락처, 가입(이용)일, 이용업체명, 첨부 사진(선택)<br>· 이용 목적: 가입(이용) 사실 확인, 사은품 지급 및 안내<br>· 제3자 제공: 가입(이용) 확인을 위해 이용업체에 성명·연락처·가입(이용)일을 제공합니다.<br>· 보유·이용 기간: 사은품 지급 완료일로부터 1년(관계 법령에 따라 보존이 필요한 경우 해당 기간)<br>· 인증글 이용: 작성한 인증글(글·사진)을 하나로가 사용하는 것에 동의하며, 철회는 klconactkr@gmail.com 으로 요청하실 수 있습니다.<br>· 동의를 거부할 권리가 있으나, 거부 시 인증글 등록 및 사은품 지급이 제한됩니다.</div></details>
         </div>
       </div>
@@ -82,22 +88,24 @@ a:hover{opacity:.85}
         <svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M7.5 12.5l3 3 6-6.500"></path></svg>
         <strong style="font-size: 20px; font-weight: 700">인증글이 접수되었습니다</strong>
         <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #3A4454">사은품은 가입(이용)이 확인 된 후 순차적으로 지급드리고 있습니다</p>
-        <a href="/" style="margin-top: 6px; padding: 12px 22px; border-radius: 10px; background: var(--accent); color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none">메인으로</a>
+        <a href="index.html" style="margin-top: 6px; padding: 12px 22px; border-radius: 10px; background: var(--accent); color: #FFFFFF; font-size: 15px; font-weight: 700; text-decoration: none">메인으로</a>
       </div>
     </div>
   </main>
 
-  <footer style="margin-top: auto; padding: 40px max(20px, calc((100% - 972px) / 2)); background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
+  <footer style="margin-top: auto; padding: 40px max(20px, calc((100vw - 1100px) / 2)); background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
     <strong style="font-size: 12px; font-weight: 600; color: #5F6763">케이엘커넥트</strong>
     <span>사업자등록번호 305-66-00691 · 개인정보 보호책임자 구자경 · 제휴 및 일반 문의 klconactkr@gmail.com</span>
     <span>경기도 오산시 대원로 11, 4층 2호</span>
     <span>본 사이트는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
-    <a href="/privacy" style="align-self: flex-start; padding: 6px 0; font-weight: 600">개인정보처리방침</a>
-    <a href="/partner" style="align-self: flex-start; padding: 6px 0; font-weight: 600">파트너 신청</a>
+    <a href="Privacy.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">개인정보처리방침</a>
+    <a href="Partner.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">파트너 신청</a>
   </footer>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6BCB","#2348C7","#0F4FA8"]},"$preview":{"width":1440,"height":1580}}'>
+</template>
+<script src="dc-runtime.js"></script>
+<script>
+
 class Component extends DCLogic {
   renderVals() {
     const st = this.state || {};
@@ -122,12 +130,13 @@ class Component extends DCLogic {
       submit: () => {
         const ok = st.name && st.date && (st.phone || '').replace(/\D/g, '').length >= 10 && st.company && st.a1 !== false;
         this.setState(ok ? { done: true, err: false } : { err: true });
-        if (ok) window.scrollTo(0, 0);
+        if (ok) { window.scrollTo(0, 0); window.submitInquiry({ source: '계약 인증', name: st.name, phone: st.phone, memo: '업체: ' + st.company + '\n계약일: ' + st.date + '\n' + (st.body || ''), consent: true }).catch(function (e) { console.error(e); }); }
       },
           };
   }
 }
+
 </script>
-<script type="module" src="/hnaro-forms.js"></script>
+<script>DC.mount(Component);</script>
 </body>
 </html>

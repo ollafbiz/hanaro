@@ -2,14 +2,12 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>하나로 | 인터넷 가입</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>(function(){try{var p=location.pathname.replace(/\.html$/,'');if(p===''||p==='/')p='/index';var m=/-m$/.test(p);var small=window.matchMedia('(max-width: 768px)').matches;var to=null;if(small&&!m)to=p+'-m';else if(!small&&m){to=p.slice(0,-2);if(to==='/index')to='/';}if(to)location.replace(to+location.search+location.hash);}catch(e){}})();</script>
-<script src="/support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
+
+<title>인터넷 가입 상담 | 하나로</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<script>(function(){var small=matchMedia('(max-width:767px)').matches;if(small!==false){location.replace('Internet-Mobile.html'+location.search+location.hash)}})();</script>
+
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 body{margin:0}
@@ -17,10 +15,18 @@ a{color:inherit}
 a:hover{opacity:.85}
 button:hover{opacity:.9}
 </style>
-</helmet>
-<div style="--accent: {{accent}}; width: 100%; min-height: 3135px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
 
-  <header style="position: sticky; top: 0; z-index: 10; min-height: 72px; box-sizing: border-box; padding: 8px max(20px, calc((100% - 972px) / 2)); background: #FFFFFF; border-bottom: 1px solid #DDE1DE; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px">
+</head>
+<body>
+<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6B5A","#1B5FE0","#0F4FA8"]},"$preview":{"width":1440,"height":3135}}'></div>
+<template id="dc-tpl">
+
+<div style="--accent: {{accent}}; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
+  <button type="button" onClick="{{reload}}" data-review-toggle="true" aria-label="새로고침" style="position: fixed; left: 18px; bottom: 18px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; gap: 6px; background: #1E2420; color: #FFFFFF; border: 0; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.300 5.700"></path><path d="M20 4v7h-7"></path></svg>새로고침</button>
+
+  <a href="Internet-Mobile.html" data-review-toggle="true" style="position: fixed; bottom: 18px; right: 18px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; background: #1E2420; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none">모바일로 보기</a>
+
+  <header style="position: sticky; top: 0; z-index: 10; min-height: 72px; box-sizing: border-box; padding: 8px max(20px, calc((100vw - 1100px) / 2)); background: #FFFFFF; border-bottom: 1px solid #DDE1DE; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px">
     <a href="#top" style="font-size: 22px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
     <nav aria-label="페이지 메뉴" style="display: flex; gap: 4px">
       <a href="#rates" style="padding: 12px; font-size: 15px; font-weight: 600; text-decoration: none">요금 확인</a>
@@ -31,7 +37,7 @@ button:hover{opacity:.9}
   </header>
 
   <main id="top" style="display: flex; flex-direction: column">
-    <section id="rates" style="padding: 48px max(20px, calc((100% - 972px) / 2)); background: color-mix(in srgb, var(--accent) 6%, white); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px; align-items: center">
+    <section id="rates" style="padding: 48px max(20px, calc((100vw - 1100px) / 2)); background: color-mix(in srgb, var(--accent) 6%, white); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px; align-items: center">
       <div style="display: flex; flex-direction: column; gap: 20px">
         <h1 style="margin: 0; font-size: 46px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em">인터넷 가입,<br>한 번에 비교하세요</h1>
         <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3F4843">조건을 고르면 예상 월요금과 사은품을 바로 확인할 수 있습니다.</p>
@@ -78,7 +84,7 @@ button:hover{opacity:.9}
       </div>
     </section>
 
-    <div style="padding: 48px max(20px, calc((100% - 972px) / 2)) 72px; display: flex; flex-direction: column; gap: 48px">
+    <div style="padding: 48px max(20px, calc((100vw - 1100px) / 2)) 72px; display: flex; flex-direction: column; gap: 48px">
       <section id="direct" style="display: flex; flex-direction: column; gap: 16px">
         <h2 style="margin: 0; font-size: 28px; font-weight: 700">추천 업체</h2>
         <p style="margin: 0; font-size: 14px; color: #56605A">추천 업체는 본 사이트 대표가 공동 운영하는 가입처로, 상단에 고정 노출됩니다.</p>
@@ -108,7 +114,7 @@ button:hover{opacity:.9}
                 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">희망 통신사<select name="carrier" style="height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF"><option value="">선택해 주세요</option><option>SK</option><option>KT</option><option>LG</option></select></label>
                 <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
                   <label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" name="agree" required style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">개인정보 수집·이용 동의 (필수)</label>
-                  <a href="/privacy" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a>
+                  <a href="Privacy.html" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a>
                 </div>
                 <button type="button" style="height: 56px; background: var(--accent); color: #FFFFFF; border: 0; border-radius: 10px; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer">무료 상담 신청</button>
               </form>
@@ -144,9 +150,9 @@ button:hover{opacity:.9}
           <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600">이름<input type="text" autocomplete="name" placeholder="이름 입력" style="height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF"></label>
           <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600">연락처<input type="tel" autocomplete="tel" placeholder="010-0000-0000" style="height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF"></label>
           <label style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 600">희망 상품<select style="height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF"><option value="">선택해 주세요</option><option>인터넷</option><option>인터넷 + TV</option><option>휴대폰</option></select></label>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" required style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">[필수] 개인정보 수집·이용 동의</label><a href="/privacy" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" required style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">[필수] 개인정보 제3자 제공 동의 (신청 업체)</label><a href="/privacy" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">[선택] 올라프(에이엘네트웍스) 상담 연락 동의</label><a href="/privacy" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" required style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">[필수] 개인정보 수집·이용 동의</label><a href="Privacy.html" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" required style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">[필수] 개인정보 제3자 제공 동의 (신청 업체)</label><a href="Privacy.html" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--accent)">[선택] 올라프(에이엘네트웍스) 상담 연락 동의</label><a href="Privacy.html" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a></div>
           <button type="button" style="height: 56px; background: var(--accent); color: #FFFFFF; border: 0; border-radius: 10px; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer">상담 신청하기</button>
         </form>
       </section>
@@ -166,17 +172,19 @@ button:hover{opacity:.9}
     </div>
   </main>
 
-  <footer style="margin-top: auto; padding: 36px max(20px, calc((100% - 972px) / 2)); background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
+  <footer style="margin-top: auto; padding: 36px max(20px, calc((100vw - 1100px) / 2)); background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
     <strong style="font-size: 12px; font-weight: 600; color: #5F6763">케이엘커넥트</strong>
     <span>사업자등록번호 305-66-00691 · 개인정보 보호책임자 구자경 · 제휴 및 일반 문의 klconactkr@gmail.com</span>
     <span>경기도 오산시 대원로 11, 4층 2호</span>
     <span>본 사이트는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
     <span>케이엘커넥트는 통신판매중개자로서 통신판매의 당사자가 아니며, 개별 판매자가 제공하는 서비스의 이행 및 계약사항 등에 관한 의무와 책임은 해당 거래당사자에게 있습니다.</span>
-    <a href="/privacy" style="align-self: flex-start; padding: 6px 0; font-weight: 600">개인정보처리방침</a>
+    <a href="Privacy.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">개인정보처리방침</a>
   </footer>
 </div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6B5A","#1B5FE0","#0F4FA8"]},"$preview":{"width":1440,"height":3135}}'>
+</template>
+<script src="dc-runtime.js"></script>
+<script>
+
 class Component extends DCLogic {
   renderVals() {
     const s = this.state || {};
@@ -226,7 +234,8 @@ class Component extends DCLogic {
     };
   }
 }
+
 </script>
-<script type="module" src="/hnaro-forms.js"></script>
+<script>DC.mount(Component);</script>
 </body>
 </html>
