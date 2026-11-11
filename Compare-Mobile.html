@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>인터넷 비교 견적 | 하나로</title>
+<script>(function(){var small=matchMedia('(max-width:767px)').matches;if(small!==true){location.replace('Compare.html'+location.search+location.hash)}})();</script>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit}
+a:hover{opacity:.85}
+button:hover{opacity:.9}
+</style>
+
+</head>
+<body>
+<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6BCB","#2348C7","#0F4FA8"]},"$preview":{"width":390,"height":3820}}'></div>
+<template id="dc-tpl">
+
+<div style="--accent: {{accent}}; width: 390px; max-width: 100%; margin: 0 auto; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
+  <button type="button" onClick="{{reload}}" data-review-toggle="true" aria-label="새로고침" style="position: fixed; left: 18px; bottom: 18px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; gap: 6px; background: #1E2420; color: #FFFFFF; border: 0; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.300 5.700"></path><path d="M20 4v7h-7"></path></svg>새로고침</button>
+
+  <a href="Compare.html" data-review-toggle="true" style="position: fixed; top: 4px; right: 16px; z-index: 20; height: 44px; box-sizing: border-box; padding: 0 14px; display: flex; align-items: center; background: #1E2420; color: #FFFFFF; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none">PC로 보기</a>
+  <header style="border-bottom: 1px solid #E3E6EB">
+    <div style="height: 56px; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center">
+      <a href="index-Mobile.html" style="padding: 10px 0; font-size: 20px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
+    </div>
+    <form role="search" style="margin: 0 20px; height: 48px; box-sizing: border-box; display: flex; border: 2px solid var(--accent); border-radius: 10px; overflow: hidden">
+      <input type="search" aria-label="혜택과 업체 검색" placeholder="필요하신 서비스, 업종 등을 검색해보세요" style="flex: 1; min-width: 0; padding: 0 12px; border: 0; outline-offset: -2px; font: inherit; font-size: 16px; color: #1E2420; background: #FFFFFF">
+      <button type="button" aria-label="검색" style="width: 48px; display: flex; align-items: center; justify-content: center; background: var(--accent); color: #FFFFFF; border: 0; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.500 16.500L21 21"></path></svg></button>
+    </form>
+    <nav aria-label="카테고리" style="margin-top: 4px; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; white-space: nowrap">
+      <a href="index-Mobile.html" style="padding: 12px 10px; font-size: 15px; font-weight: 500; text-decoration: none">전체서비스</a>
+      <a href="Compare-Mobile.html" aria-current="page" style="padding: 12px 10px; font-size: 15px; font-weight: 700; color: var(--accent); text-decoration: none">인터넷·TV</a>
+      <a href="Review-Mobile.html" style="padding: 12px 10px; font-size: 15px; font-weight: 500; text-decoration: none">계약 인증</a>
+      <a href="Partner-Mobile.html" style="padding: 12px 10px; font-size: 15px; font-weight: 500; text-decoration: none">파트너 신청</a>
+    </nav>
+  </header>
+
+  <main style="padding: 24px 20px 40px; display: flex; flex-direction: column; gap: 36px">
+
+    <section style="display: flex; flex-direction: column; gap: 16px">
+      <h1 style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em">인터넷 비교 견적</h1>
+    <nav aria-label="업종" style="margin: 0 -20px; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; white-space: nowrap; border-bottom: 1px solid #E3E6EB">
+      <a aria-current="page" href="Compare-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid var(--accent); font-size: 15px; font-weight: 700; color: var(--accent); text-decoration: none">인터넷·TV</a>
+      <a href="Beauty-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">뷰티·건강</a>
+      <a href="Moving-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">이사</a>
+      <a href="Cleaning-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">청소</a>
+      <a href="Plumbing-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">설비·배관</a>
+      <a href="Rent-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">자동차 렌트/리스</a>
+      <a href="Category-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">웨딩</a>
+      <a href="Interior-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">인테리어·철거</a>
+      <a href="Accounting-Mobile.html" style="padding: 13px 10px; border-bottom: 3px solid transparent; font-size: 15px; font-weight: 500; color: #3A4454; text-decoration: none">회계·법무</a>
+    </nav>
+    </section>
+
+    <section id="calc" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start">
+      <div style="flex: 1 1 100%; min-width: 0; padding: 18px; border: 1px solid #E3E6EB; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 22px">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 15px; font-weight: 700">조건선택</span>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap">
+            <sc-for list="{{conds}}" as="c" hint-placeholder-count="2">
+              <button type="button" aria-pressed="{{c.on}}" onClick="{{c.pick}}" style="min-height: 46px; padding: 0 18px; background: {{c.bg}}; color: {{c.fg}}; border: 1.5px solid {{c.bd}}; border-radius: 12px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer">{{c.label}}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 15px; font-weight: 700">통신사</span>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px">
+            <sc-for list="{{carriers}}" as="c" hint-placeholder-count="5">
+              <button type="button" aria-pressed="{{c.on}}" onClick="{{c.pick}}" style="height: 76px; padding: 8px 4px; background: {{c.bg}}; border: 1.5px solid {{c.bd}}; border-radius: 12px; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 4px; font: inherit">
+                <span style="flex: 1; display: flex; align-items: center; justify-content: center"><img src="{{c.img}}" alt="" style="height: {{c.imgH}}; max-width: 100%; object-fit: contain"></span>
+                <span style="font-size: 12px; font-weight: 700; color: {{c.fg}}; white-space: nowrap; letter-spacing: -0.03em">{{c.label}}</span>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 15px; font-weight: 700">인터넷</span>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding-top: 6px">
+            <sc-for list="{{netOpts}}" as="o" hint-placeholder-count="3">
+              <button type="button" aria-pressed="{{o.on}}" onClick="{{o.pick}}" style="position: relative; min-height: 44px; text-align: left; padding: 14px 10px 12px; background: {{o.bg}}; border: 1.5px solid {{o.bd}}; border-radius: 12px; font: inherit; cursor: pointer; display: flex; flex-direction: column; gap: 3px">
+                <span style="position: absolute; top: -9px; left: 10px; display: {{o.pickDisp}}; background: var(--accent); color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 5px">하나로 PICK</span>
+                <span style="font-size: 16px; font-weight: 700; color: #1E2420">{{o.title}}</span>
+                <span style="font-size: 13px; line-height: 1.4; color: #56605A">{{o.desc}}</span>
+                <span style="font-size: 12px; line-height: 1.4; color: #7A837D">{{o.note}}</span>
+                <span style="margin-top: 6px; font-size: 15px; font-weight: 700; color: {{o.fg}}">{{o.priceText}}</span>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+        <sc-if value="{{showTv}}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 15px; font-weight: 700">TV 상품</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); gap: 10px; padding-top: 6px">
+            <sc-for list="{{tvOpts}}" as="o" hint-placeholder-count="3">
+              <button type="button" aria-pressed="{{o.on}}" onClick="{{o.pick}}" style="position: relative; min-height: 44px; text-align: left; padding: 14px 10px 12px; background: {{o.bg}}; border: 1.5px solid {{o.bd}}; border-radius: 12px; font: inherit; cursor: pointer; display: flex; flex-direction: column; gap: 3px">
+                <span style="position: absolute; top: -9px; left: 10px; display: {{o.pickDisp}}; background: var(--accent); color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 5px">하나로 PICK</span>
+                <span style="font-size: 16px; font-weight: 700; color: #1E2420">{{o.title}}</span>
+                <span style="font-size: 13px; line-height: 1.4; color: #56605A">{{o.desc}}</span>
+                <span style="font-size: 12px; line-height: 1.4; color: #7A837D">{{o.note}}</span>
+                <span style="margin-top: 6px; font-size: 15px; font-weight: 700; color: {{o.fg}}">{{o.priceText}}</span>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+        </sc-if>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 15px; font-weight: 700">결합 할인</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); gap: 10px; padding-top: 6px">
+            <sc-for list="{{disOpts}}" as="o" hint-placeholder-count="3">
+              <button type="button" aria-pressed="{{o.on}}" onClick="{{o.pick}}" style="position: relative; min-height: 44px; text-align: left; padding: 14px 10px 12px; background: {{o.bg}}; border: 1.5px solid {{o.bd}}; border-radius: 12px; font: inherit; cursor: pointer; display: flex; flex-direction: column; gap: 3px">
+                <span style="position: absolute; top: -9px; left: 10px; display: {{o.pickDisp}}; background: var(--accent); color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 5px">하나로 PICK</span>
+                <span style="font-size: 16px; font-weight: 700; color: #1E2420">{{o.title}}</span>
+                <span style="font-size: 13px; line-height: 1.4; color: #56605A">{{o.desc}}</span>
+                <span style="font-size: 12px; line-height: 1.4; color: #7A837D">{{o.note}}</span>
+                <span style="margin-top: 6px; font-size: 15px; font-weight: 700; color: {{o.fg}}">{{o.priceText}}</span>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+      <div style="flex: 1 1 100%; min-width: 0; padding: 20px; border: 1px solid #E3E6EB; border-radius: 16px; background: #FFFFFF; box-shadow: 0 8px 24px rgba(20, 50, 35, 0.06); display: flex; flex-direction: column; gap: 16px">
+        <span style="font-size: 16px; font-weight: 600; color: #3F4843">{{carrierName}} 예상요금</span>
+        <div style="display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap"><span style="font-size: 28px; font-weight: 700; color: var(--accent)">{{totalText}}</span><span style="font-size: 13px; color: #56605A">(부가세 포함)</span></div>
+        <div style="height: 1px; background: #E3E6EB"></div>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600"><span>인터넷 요금</span><span>{{netLine}}</span></div>
+          <span style="font-size: 13px; color: #56605A">{{netSub}}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600"><span>TV 요금</span><span>{{tvLine}}</span></div>
+          <span style="font-size: 13px; color: #56605A">{{tvSub}}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 15px; font-weight: 600">요금할인혜택</span>
+          <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: #56605A"><span>{{disSub}}</span><span style="color: #D92D4A; font-weight: 600">{{disLine}}</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: #56605A"><span>인터넷 추가할인</span><span style="color: #D92D4A; font-weight: 600">{{promoLine}}</span></div>
+        </div>
+        <button type="button" onClick="{{goQuote}}" style="height: 56px; background: var(--accent); color: #FFFFFF; border: 0; border-radius: 12px; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer">상담신청</button>
+        <span style="font-size: 12px; line-height: 1.5; color: #56605A">요금과 조건은 상담 시 확정됩니다.</span>
+      </div>
+    </section>
+
+    <section id="quote" style="padding: 18px; border: 2px solid var(--accent); border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <h2 style="margin: 0; font-size: 20px; font-weight: 700">견적 요청하기</h2>
+        <div style="margin: 6px 0 0; padding: 14px 14px; display: flex; align-items: center; gap: 10px; background: color-mix(in srgb, var(--accent) 7%, white); border: 1px solid color-mix(in srgb, var(--accent) 28%, white); border-radius: 12px"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 28 28" style="flex: none"><circle cx="14" cy="14" r="14" fill="var(--accent)"></circle><path d="M8.5 14.5l3.8 3.8 7.2-7.6" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg><p style="margin: 0; font-size: 14px; font-weight: 600; line-height: 1.45; letter-spacing: -0.02em; text-wrap: balance; color: #1E2420">고객님이 요청하신 조건에서 <strong style="font-weight: 800; color: var(--accent)">혜택이 가장 우수한 파트너업체 한곳</strong>에서만 연락을 드리고 있습니다.</p></div>
+      </div>
+      <form style="display: flex; flex-direction: column; gap: 12px">
+        <div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 12px">
+          <label style="min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">이름 (선택)<input type="text" autocomplete="name" placeholder="이름을 입력해주세요 (선택)" style="height: 52px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF; width: 100%; min-width: 0"></label>
+          <label style="min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">연락처 (필수)<span style="position: relative; display: block"><input type="tel" inputmode="numeric" autocomplete="tel" maxlength="13" required value="{{phone}}" onInput="{{onPhone}}" placeholder="연락처를 입력해주세요 (필수)" style="height: 52px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF; width: 100%; min-width: 0; border: 2px solid {{phoneBd}}; background: {{phoneBg}}"><span aria-hidden="true" style="position: absolute; top: -10px; right: 10px; display: {{badgeDisp}}; padding: 3px 9px; background: #F29900; color: #FFFFFF; border-radius: 6px; font-size: 12px; font-weight: 700; line-height: 1.3">필수입력</span></span></label>
+        </div>
+        <label style="min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">상담내용 (선택)<textarea rows="3" placeholder="상담받고 싶은 내용을 남겨주세요(선택)" style="height: 52px; box-sizing: border-box; padding: 0 12px; border: 1px solid #B9C1BC; border-radius: 10px; font: inherit; font-size: 16px; font-weight: 400; color: #1E2420; background: #FFFFFF; width: 100%; min-width: 0; height: auto; padding: 12px; resize: vertical; line-height: 1.5"></textarea></label>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+          <label style="min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500"><input type="checkbox" checked required style="flex: none; width: 24px; height: 24px; margin: 0; accent-color: var(--accent)">[필수] 개인정보 수집·이용 동의</label>
+          <a href="Privacy-Mobile.html" style="flex: none; padding: 12px 0; font-size: 13px; color: #56605A">내용 보기</a>
+        </div>
+        <button type="button" style="height: 56px; background: var(--accent); color: #FFFFFF; border: 0; border-radius: 10px; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer">견적신청</button>
+      </form>
+    </section>
+
+
+
+    <section style="display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <h2 style="margin: 0; flex: none; font-size: 17px; font-weight: 600; color: #4A524D">직접 고르기</h2>
+          <hr style="flex: 1; margin: 0; border: 0; border-top: 1px solid #D5DAD7">
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px">
+          <sc-for list="{{partners}}" as="p" hint-placeholder-count="4">
+            <a href="{{p.url}}" target="_blank" rel="noopener" style="min-width: 0; background: #FFFFFF; border-radius: 12px; padding: 4px; box-shadow: {{p.ring}}0 1px 2px rgba(20,30,25,.05), 0 6px 20px rgba(20,30,25,.07); display: flex; flex-direction: column; text-decoration: none; color: inherit; cursor: pointer">
+              <div style="position: relative">
+                <div role="img" aria-label="{{p.name}} 배너" style="aspect-ratio: 1 / 1; border-radius: 9px; background: #EEF1EF {{p.bg}}; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #6B736E">{{p.bannerLabel}}</div>
+              </div>
+              <div style="padding: 5px 3px 2px; display: flex; flex-direction: column; gap: 1px; flex: 1">
+                <span style="font-size: 10px; font-weight: 600; letter-spacing: .02em; color: #98A09B">광고</span>
+                <strong style="font-size: 12.5px; font-weight: 700; line-height: 1.35; letter-spacing: -0.03em; word-break: keep-all; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #1E2420">{{p.name}}</strong>
+                <span style="font-size: 13px; line-height: 1.5; color: #7A827D; display: none; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">{{p.desc}}</span>
+                <span style="margin-top: auto; padding-top: 3px"><span style="height: 28px; display: flex; align-items: center; justify-content: center; background: #F2F5F3; border-radius: 8px; font-size: 12px; font-weight: 700; color: #1E2420">자세히 보기</span></span>
+              </div>
+            </a>
+          </sc-for>
+        </div>
+      </section>
+
+  </main>
+
+  <footer style="margin-top: auto; padding: 32px 20px; background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
+    <strong style="font-size: 12px; font-weight: 600; color: #5F6763">케이엘커넥트</strong>
+    <span>사업자등록번호 305-66-00691<br>개인정보 보호책임자 구자경<br>제휴 및 일반 문의 klconactkr@gmail.com<br>경기도 오산시 대원로 11, 4층 2호</span>
+    <span>본 사이트는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
+    <span>케이엘커넥트는 통신판매중개자로서 통신판매의 당사자가 아니며, 개별 판매자가 제공하는 서비스의 이행 및 계약사항 등에 관한 의무와 책임은 해당 거래당사자에게 있습니다.</span>
+    <a href="Privacy-Mobile.html" style="align-self: flex-start; padding: 12px 0; font-weight: 600">개인정보처리방침</a>
+    <a href="Partner-Mobile.html" style="align-self: flex-start; padding: 12px 0; font-weight: 600">파트너 신청</a>
+  </footer>
+
+  <div style="position: sticky; bottom: 0; padding: 10px 20px 14px; background: #FFFFFF; border-top: 1px solid #E3E6EB; box-shadow: 0 -6px 18px rgba(20, 33, 58, 0.08)">
+    <a href="#quote" style="height: 56px; display: flex; align-items: center; justify-content: center; background: var(--accent); color: #FFFFFF; border-radius: 14px; font-size: 17px; font-weight: 700; text-decoration: none">견적 요청하기</a>
+  </div>
+</div>
+</template>
+<script src="dc-runtime.js"></script>
+<script>
+
+class Component extends DCLogic {
+  logos() {
+    return {
+      kt: { img: 'assets/6e9096d4ecf7.png', h: 26 },
+      lg: { img: 'assets/257290dffca0.png', h: 23 },
+      sk: { img: 'assets/e2352db7e12f.png', h: 34 },
+      hello: { img: 'assets/48ee3f8b2592.png', h: 14 },
+      skylife: { img: 'assets/dae4d1ddc2f4.png', h: 20 }
+    };
+  }
+  data() {
+    if (!this._d) {
+      const CARRIERS = [
+        { id: 'kt', name: 'KT', x: 0 },
+        { id: 'lg', name: 'LG', x: 0 },
+        { id: 'sk', name: 'SK', x: 0 },
+        { id: 'hello', name: 'LG헬로비전', x: 0 },
+        { id: 'skylife', name: '스카이라이프', x: 0 }
+      ];
+      const INTERNET_PLANS = {
+        kt: [
+          { id: 'kt_100', name: '100', nameSuffix: 'Mbps', desc: '슬림', price: 23100 },
+          { id: 'kt_500', name: '500', nameSuffix: 'Mbps', desc: '베이직', price: 34100, promo: -5500 },
+          { id: 'kt_1000', name: '1', nameSuffix: 'Gbps', desc: '에센스', price: 38500, promo: -5500 }
+        ],
+        lg: [
+          { id: 'lg_100', name: '100', nameSuffix: 'Mbps', desc: '광랜', price: 22000 },
+          { id: 'lg_500', name: '500', nameSuffix: 'Mbps', desc: '기가슬림', price: 33000, promoTv: -5500 },
+          { id: 'lg_1000', name: '1', nameSuffix: 'Gbps', desc: '기가', price: 38500, promoTv: -5500 }
+        ],
+        sk: [
+          { id: 'sk_100', name: '100', nameSuffix: 'Mbps', desc: '광랜', price: 23100 },
+          { id: 'sk_500', name: '500', nameSuffix: 'Mbps', desc: '기가라이트', price: 34100 },
+          { id: 'sk_1000', name: '1', nameSuffix: 'Gbps', desc: '기가', price: 39600 }
+        ],
+        hello: [
+          { id: 'hl_100', name: '100', nameSuffix: 'Mbps', desc: '광랜라이트', price: 17430, soloPrice: 21890 },
+          { id: 'hl_160', name: '160', nameSuffix: 'Mbps', desc: '광랜', price: 22160, soloPrice: 27610 },
+          { id: 'hl_500', name: '500', nameSuffix: 'Mbps', desc: '기가라이트', price: 25190, soloPrice: 31460 }
+        ],
+        skylife: [
+          { id: 'sl_100', name: '100', nameSuffix: 'Mbps', desc: '베이직', price: 24200 },
+          { id: 'sl_200', name: '200', nameSuffix: 'Mbps', desc: '스마트', price: 25300 },
+          { id: 'sl_500', name: '500', nameSuffix: 'Mbps', desc: '스탠다드', price: 30800 }
+        ]
+      };
+      const TV_PLANS = {
+        kt: [
+          { id: 'kt_tv_basic', name: '베이직', desc: '236 채널', price: 16500 },
+          { id: 'kt_tv_essence', name: '에센스', desc: '266 채널', price: 20900 },
+          { id: 'kt_tv_all', name: '모든G', desc: '250 채널', note: '지상파/종편 등 25만 여편 콘텐츠 시청', price: 24200 }
+        ],
+        lg: [
+          { id: 'lg_tv_sil', name: '실속형', desc: '219 채널', price: 17600 },
+          { id: 'lg_tv_pre', name: '프리미엄', desc: '254 채널', price: 20900 },
+          { id: 'lg_tv_vod', name: '프리미엄VOD', desc: '257 채널', note: '매월 5,500원 쿠폰 제공', price: 23100 }
+        ],
+        sk: [
+          { id: 'sk_tv_eco', name: '이코노미', desc: '184 채널', price: 14300 },
+          { id: 'sk_tv_std', name: '스탠다드', desc: '226 채널', price: 17600 },
+          { id: 'sk_tv_all', name: 'ALL', desc: '252 채널', price: 20900 }
+        ],
+        hello: [
+          { id: 'hl_tv_eco', name: 'UHD 이코노미', desc: '109개 채널', price: 15400 },
+          { id: 'hl_tv_new', name: 'UHD 뉴베이직', desc: '245개 채널', price: 17600 }
+        ],
+        skylife: [
+          { id: 'sl_tv_basic', name: '베이직', desc: '236개 채널', price: 9900 },
+          { id: 'sl_tv_plus', name: '플러스', desc: '244개 채널', price: 11000 }
+        ]
+      };
+      const DISCOUNT_PLANS = {
+        kt: [
+          { id: 'kt_dis_none', name: '미결합', desc: '결합 없는 기본형', price: 0 },
+          { id: 'kt_dis_total', name: '총액결합', desc: 'KT 휴대폰과 결합', price: -5500 },
+          { id: 'kt_dis_fixed', name: '정액결합', desc: 'KT 휴대폰과 결합', price: -5500 }
+        ],
+        lg: [
+          { id: 'lg_dis_none', name: '미결합', desc: '결합 없는 기본형', price: 0 },
+          { id: 'lg_dis_family', name: '참쉬운가족결합', desc: 'LG 휴대폰과 결합', price: -5500, bySpeed: { lg_500: -9900, lg_1000: -13200 } }
+        ],
+        sk: [
+          { id: 'sk_dis_none', name: '미결합', desc: '결합 없는 기본형', price: 0, optZero: true, bySpeedTv: { sk_100: -1100, sk_500: -5500, sk_1000: -5500 } },
+          { id: 'sk_dis_family', name: '요즘가족결합', desc: 'SK 휴대폰과 결합', price: -3300, bySpeed: { sk_100: -4400, sk_500: -11000, sk_1000: -13200 }, bySpeedTv: { sk_100: -5500, sk_500: -12100, sk_1000: -14300 } }
+        ],
+        hello: [
+          { id: 'hl_dis_none', name: '미결합', desc: '결합 없는 기본형', price: 0 },
+          { id: 'hl_dis_hello', name: '헬로결합', desc: '헬로모바일과 결합', price: -4158, bySpeed: { hl_100: -4158, hl_160: -5522, hl_500: -6292 } }
+        ],
+        skylife: [
+          { id: 'sl_dis_none', name: '미결합', desc: '결합 없는 기본형', price: 0 }
+        ]
+      };
+      // 현금 사은품 (만원)
+      const CASH_TABLE = {
+        kt: { 단독: { '100': 9, '500': 14, '1000': 14 }, 결합: { '100': 37, '500': 45, '1000': 45 } },
+        lg: { 단독: { '100': 20, '500': 23, '1000': 23 }, 결합: { '100': 33, '500': 47, '1000': 47 } },
+        sk: { 단독: { '100': 9, '500': 17, '1000': 17 }, 결합: { '100': 43, '500': 52, '1000': 52 } },
+        hello: { 단독: { '100': 0, '160': 11, '500': 16 }, 결합: { '100': 0, '160': 36, '500': 40 } },
+        skylife: { 단독: { '100': 10, '200': 12, '500': 14 }, 결합: { '100': 35, '200': 36, '500': 42 } }
+      };
+      // 통신사별 기본 선택(올픽 PICK)
+      const PICKS = {
+        kt: { internetId: 'kt_500', tvId: 'kt_tv_basic', discountId: 'kt_dis_total' },
+        lg: { internetId: 'lg_500', tvId: 'lg_tv_sil', discountId: 'lg_dis_family' },
+        sk: { internetId: 'sk_500', tvId: 'sk_tv_std', discountId: 'sk_dis_family' },
+        hello: { internetId: 'hl_100', tvId: 'hl_tv_eco', discountId: 'hl_dis_hello' },
+        skylife: { internetId: 'sl_200', tvId: 'sl_tv_basic', discountId: 'sl_dis_none' }
+      };
+      this._d = { CARRIERS, INTERNET_PLANS, TV_PLANS, DISCOUNT_PLANS, CASH_TABLE, PICKS };
+    }
+    return this._d;
+  }
+  renderVals() {
+    const s = this.state || {};
+    const D = this.data();
+    const cid = D.CARRIERS.some((c) => c.id === s.carrier) ? s.carrier : 'kt';
+    const carrierName = D.CARRIERS.find((c) => c.id === cid).name;
+    const solo = (s.cond ?? '인터넷 + TV') === '인터넷 단독';
+    const pk = D.PICKS[cid];
+    const valid = (list, id, def) => ((list || []).some((p) => p.id === id) ? id : ((list || []).some((p) => p.id === def) ? def : ((list || [])[0] || {}).id));
+    const netId = valid(D.INTERNET_PLANS[cid], s.internetId, pk.internetId);
+    const tvId = valid(D.TV_PLANS[cid], s.tvId, pk.tvId);
+    const disId = valid(D.DISCOUNT_PLANS[cid], s.discountId, pk.discountId);
+    const net = D.INTERNET_PLANS[cid].find((p) => p.id === netId);
+    const tvp = solo ? null : (D.TV_PLANS[cid] || []).find((p) => p.id === tvId);
+    const dis = (D.DISCOUNT_PLANS[cid] || []).find((p) => p.id === disId);
+    const won = (n) => Math.abs(n).toLocaleString();
+    const discOf = (d) => {
+      if (!d) return 0;
+      if (!solo && d.bySpeedTv && d.bySpeedTv[net.id] != null) return d.bySpeedTv[net.id];
+      if (d.bySpeed && d.bySpeed[net.id] != null) return d.bySpeed[net.id];
+      return d.price || 0;
+    };
+    const netPrice = solo && net.soloPrice ? net.soloPrice : net.price;
+    const discount = discOf(dis);
+    const promo = (net.promo || 0) + (!solo && net.promoTv ? net.promoTv : 0);
+    const total = netPrice + (tvp ? tvp.price : 0) + discount + promo;
+    const speedKey = net.name === '1' ? '1000' : net.name;
+    const cashT = D.CASH_TABLE[cid][solo ? '단독' : '결합'];
+    const cash = cashT[speedKey] != null ? cashT[speedKey] : cashT['100'];
+    const netTitle = net.name + (net.nameSuffix === 'Mbps' ? 'M' : 'G');
+    const reset = { internetId: undefined, tvId: undefined, discountId: undefined };
+    const chip = (on, fn) => ({ on: String(on), bg: on ? 'var(--accent)' : '#FFFFFF', fg: on ? '#FFFFFF' : '#3A4454', bd: on ? 'var(--accent)' : '#B9C1CC', pick: fn });
+    const card = (on, key, id, o) => ({ ...o, on: String(on), bg: on ? 'color-mix(in srgb, var(--accent) 8%, white)' : '#FFFFFF', bd: on ? 'var(--accent)' : '#D5DAD7', fg: on ? 'var(--accent)' : '#1E2420', pick: () => this.setState({ [key]: id }) });
+    const signed = (n) => (n < 0 ? '-' + won(n) + '원' : '0원');
+    const openCard = s.openCard ?? 0;
+    const line = '1px solid #E0E3E8';
+    return {
+      reload: () => { const k = Object.keys(this.state || {}); this.setState(k.reduce((o, key) => { o[key] = undefined; return o; }, {})); window.scrollTo(0, 0); },
+      accent: this.props.accent ?? '#068A4C',
+      carriers: D.CARRIERS.map((c) => ({ label: c.name, img: this.logos()[c.id].img, imgH: this.logos()[c.id].h + 'px', ...chip(c.id === cid, () => this.setState({ carrier: c.id, ...reset })), bg: c.id === cid ? 'color-mix(in srgb, var(--accent) 8%, white)' : '#FFFFFF', fg: c.id === cid ? 'var(--accent)' : '#56605A' })),
+      conds: ['인터넷 + TV', '인터넷 단독'].map((v) => ({ label: v, ...chip(v === (solo ? '인터넷 단독' : '인터넷 + TV'), () => this.setState({ cond: v })), bg: v === (solo ? '인터넷 단독' : '인터넷 + TV') ? 'color-mix(in srgb, var(--accent) 8%, white)' : '#FFFFFF', fg: v === (solo ? '인터넷 단독' : '인터넷 + TV') ? 'var(--accent)' : '#3A4454' })),
+      showTv: !solo && (D.TV_PLANS[cid] || []).length > 0,
+      netOpts: D.INTERNET_PLANS[cid].map((p) => card(p.id === netId, 'internetId', p.id, { title: p.name + p.nameSuffix, desc: p.desc, note: '', pickDisp: p.id === pk.internetId ? 'block' : 'none', priceText: '월 ' + won(solo && p.soloPrice ? p.soloPrice : p.price) })),
+      tvOpts: (D.TV_PLANS[cid] || []).map((p) => card(p.id === tvId, 'tvId', p.id, { title: p.name, desc: p.desc, note: p.note || '', pickDisp: p.id === pk.tvId ? 'block' : 'none', priceText: '월 ' + won(p.price) })),
+      disOpts: (D.DISCOUNT_PLANS[cid] || []).map((p) => card(p.id === disId, 'discountId', p.id, { title: p.name, desc: p.desc, note: '', pickDisp: 'none', priceText: p.optZero ? '0원' : (discOf(p) < 0 ? '- ' + won(discOf(p)) : '0원') })),
+      carrierName,
+      totalText: won(total) + '원',
+      netLine: won(netPrice) + '원',
+      netSub: '인터넷 ' + net.desc + ' ' + netTitle + ' (3년약정)',
+      tvLine: tvp ? won(tvp.price) + '원' : '0원',
+      tvSub: tvp ? tvp.name + ' (' + tvp.desc + ')' : '미신청',
+      disLine: signed(discount),
+      disSub: dis ? dis.name : '미결합',
+      promoLine: signed(promo),
+      phone: s.phone ?? '',
+      phoneBd: s.phone ? '#B9C1BC' : '#F29900',
+      phoneBg: s.phone ? '#FFFFFF' : '#FFF9EE',
+      badgeDisp: s.phone ? 'none' : 'block',
+      onPhone: (e) => {
+        const d = String(e.target.value || '').replace(/\D/g, '').slice(0, 11);
+        const v = d.length <= 3 ? d : d.length <= 7 ? d.slice(0, 3) + '-' + d.slice(3) : d.slice(0, 3) + '-' + d.slice(3, 7) + '-' + d.slice(7);
+        this.setState({ phone: v });
+      },
+      goQuote: () => { const el = document.getElementById('quote'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); },
+      sites: [
+        { name: '올픽', gift: cash + '만원', fee: won(total) + '원', point: '사은품 외 추가 현금 5만원' },
+        { name: '올라프', gift: '최대 50만원', fee: won(total) + '원', point: '[차별점 한 줄]' },
+        { name: '인터넷가게', gift: '[00]만원', fee: won(total) + '원', point: '신청 당일 설치' }
+      ].map((site, i) => ({ ...site, isOpen: i === openCard, closed: i !== openCard, open: () => this.setState({ openCard: i }) })),
+      partners: (() => { const all = [
+        { name: '올픽', desc: '인터넷 가입 상담 접수', url: 'https://www.all-pick.kr', img: 'assets/8d4f8cf89f64.jpg', line: '1px solid #E3E6E4' },
+        { name: '올라프', desc: '인터넷 가입 상담 접수', url: 'https://www.ollaf.co.kr/landing', img: 'assets/aaccb2e37296.jpg', line },
+        { name: '비교원', desc: '인터넷 가입 상담 접수', url: 'https://replyalba.com/pt/PQa1UuqASy', img: 'assets/b5fb950bc2b8.jpg', line },
+        { name: '판다넷', desc: '인터넷 가입 상담 접수', url: 'https://replyalba.com/pt/FPKme9l6sh', img: 'assets/06df30a4ab00.jpg', line },
+        { name: '인터넷플러스', desc: '인터넷 가입 상담 접수', url: 'https://replyalba.com/pt/YXtHiRSl4F', img: 'assets/a1f9ee8f38a9.jpg', line },
+        { name: '시월모바일', desc: '인터넷 가입 상담 접수', url: 'https://replyalba.com/pt/YkbH2xFsY6', img: 'assets/a57d169b9453.jpg', line },
+        { name: '알뜰 인터넷', desc: '인터넷 가입 상담 접수', url: 'https://replyalba.com/pt/wHmGDRrIhD', img: 'assets/c664e6a08040.jpg', line },
+        { name: '픽클', desc: '인터넷 가입 상담 접수', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00282362LC06068169N', img: 'assets/ce2658bbe39d.jpg', line },
+        { name: '제이컴퍼니', desc: '인터넷 가입 상담 접수', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00277679JC06068172M', img: 'assets/64adb165926e.jpg', line },
+        { name: '고고인터넷', desc: '인터넷 가입 상담 접수', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00281358NC06068188J', img: 'assets/1e2874534844.jpg', line },
+        { name: '해피통', desc: '인터넷 가입 상담 접수', url: 'https://replyalba.com/pt/G4ZYaLFtzU', img: 'assets/5157432aae66.jpg', line: '0' }
+      ]; this._pn = all.length; return all.slice(0, 999).map((p, i, a) => ({ ring: ['올픽','올라프','비교원','판다넷','인터넷플러스'].includes(p.name) ? 'inset 0 0 0 2px #8FE45C, 0 0 12px rgba(143,228,92,.35), ' : '', title: p.name.endsWith('인터넷') ? p.name + ' 가입 상담' : p.name + ' 인터넷 가입 상담', url: '#', bannerLabel: p.img ? '' : '배너 이미지', bg: p.img ? "url('" + p.img + "') center / cover no-repeat" : '', ...p, line: i === a.length - 1 ? '0' : line })); })(),
+      showMore: !s.showAll && (this._pn || 0) > 10,
+      more: () => this.setState({ showAll: true })
+    };
+  }
+}
+
+</script>
+<script>DC.mount(Component);</script>
+</body>
+</html>
