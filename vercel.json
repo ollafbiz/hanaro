@@ -1,8 +1,44 @@
 {
   "cleanUrls": true,
   "headers": [
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
-    { "source": "/favicon.ico", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] },
-    { "source": "/dc-runtime.js", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/dc-runtime.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/Compare",
+      "destination": "/Internet",
+      "permanent": true
+    },
+    {
+      "source": "/Compare-Mobile",
+      "destination": "/Internet-Mobile",
+      "permanent": true
+    }
   ]
 }
