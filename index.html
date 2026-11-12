@@ -18,7 +18,150 @@ a:hover{opacity:.85}
 
 </head>
 <body>
-<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6B5A","#1B5FE0","#0F4FA8"]},"$preview":{"width":1440,"height":1630}}'></div>
+<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6B5A","#1B5FE0","#0F4FA8"]},"$preview":{"width":1440,"height":1630}}'>
+
+<div style="--accent: #068A4C; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
+  
+
+  
+  <header style="padding: 0 max(20px, calc((100vw - 1100px) / 2)); border-bottom: 1px solid #DDE1DE">
+    <div style="height: 84px; display: flex; align-items: center; gap: 40px">
+      <a href="index.html" style="font-size: 24px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
+      <form role="search" style="flex: 1; max-width: 720px; height: 52px; box-sizing: border-box; display: flex; border: 2px solid var(--accent); border-radius: 999px; overflow: hidden">
+        <input type="search" aria-label="혜택과 업체 검색" placeholder="필요하신 서비스, 업종 등을 검색해보세요" style="flex: 1; min-width: 0; padding: 0 22px; border: 0; outline-offset: -2px; font: inherit; font-size: 16px; color: #1E2420; background: #FFFFFF">
+        <button type="button" aria-label="검색" style="width: 56px; display: flex; align-items: center; justify-content: center; background: var(--accent); color: #FFFFFF; border: 0; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.500 16.500L21 21"></path></svg></button>
+      </form>
+    </div>
+    <nav aria-label="카테고리" style="margin-left: -16px; display: flex; gap: 4px">
+      <a href="index.html" style="padding: 12px 16px; font-size: 16px; font-weight: 600; text-decoration: none">전체서비스</a>
+      <a href="Internet.html" style="padding: 12px 16px; font-size: 16px; font-weight: 600; text-decoration: none">인터넷·TV</a>
+      <a href="Review.html" style="padding: 12px 16px; font-size: 16px; font-weight: 600; text-decoration: none">계약 인증</a>
+      <a href="Partner.html" style="padding: 12px 16px; font-size: 16px; font-weight: 600; text-decoration: none">파트너 신청</a>
+    </nav>
+  </header>
+
+  <main style="padding: 24px max(20px, calc((100vw - 1100px) / 2)) 56px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start">
+
+    <div style="display: flex; flex-direction: column; gap: 24px">
+      <div style="position: relative">
+      <section aria-label="이벤트 배너" style="position: relative; overflow: hidden; border-radius: 20px; display: none"><a href="Review.html" style="display: block"><img alt="계약 후 인증글 남기면 스타벅스 기프티콘 전원 증정! (아메리카노) — 계약 인증하러 가기" src="assets/913c326a4afa.jpg" style="display: block; width: 100%; height: auto"></a></section>
+      <section aria-label="이벤트 배너 2" style="position: relative; overflow: hidden; border-radius: 20px; display: flex"><img alt="비교는 하나로, 한 번에 끝 — 인터넷·TV, 이사, 청소, 렌트, 회계" src="assets/92509f4844b4.jpg" style="display: block; width: 100%; height: auto"></section>
+
+      <button type="button" aria-label="이전 배너" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; border: 0; border-radius: 50%; box-shadow: 0 4px 12px rgba(20,40,30,.2); cursor: pointer; color: #1E2420"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></button>
+      <button type="button" aria-label="다음 배너" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #FFFFFF; border: 0; border-radius: 50%; box-shadow: 0 4px 12px rgba(20,40,30,.2); cursor: pointer; color: #1E2420"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg></button>
+      </div>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: -12px">
+      <button type="button" aria-label="첫 번째 배너" style="width: 72px; height: 14px; padding: 5px 0; box-sizing: border-box; border: 0; background: transparent; cursor: pointer"><span style="display: block; height: 4px; border-radius: 2px; background: #DDE1EA; overflow: hidden"><span style="display: block; height: 100%; border-radius: 2px; background: #1E3A9E; width: 0; animation: bannerFill 9s linear forwards; animation-play-state: running"></span></span></button>
+      <button type="button" aria-label="두 번째 배너" style="width: 72px; height: 14px; padding: 5px 0; box-sizing: border-box; border: 0; background: transparent; cursor: pointer"><span style="display: block; height: 4px; border-radius: 2px; background: #DDE1EA; overflow: hidden"><span style="display: block; height: 100%; border-radius: 2px; background: #1E3A9E; width: 0; animation: none; animation-play-state: running"></span></span></button>
+      <button type="button" aria-label="배너 일시정지" style="width: 22px; height: 22px; margin: 0 0 0 4px; padding: 0; border: 0; border-radius: 50%; background: #1E3A9E; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" style="display: block"><rect x="1.5" y="1" width="2.4" height="8" rx=".6" fill="#fff"></rect><rect x="6.1" y="1" width="2.4" height="8" rx=".6" fill="#fff"></rect></svg><svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" style="display: none"><path d="M2.5 1.2L8.6 5L2.5 8.8Z" fill="#fff"></path></svg></button>
+    </div>
+
+
+      <section aria-label="카테고리 바로가기" style="padding: 24px 6px; background: #F2F5F3; border: 0; border-radius: 20px; display: grid; grid-template-columns: repeat(9, minmax(0, 1fr))">
+        <a href="Internet.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="tvA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#86A9E0"></stop><stop offset="1" stop-color="#3D66B5"></stop></linearGradient><linearGradient id="tvB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F8FC"></stop><stop offset="1" stop-color="#CFDFF2"></stop></linearGradient></defs><rect x="18" y="35" width="12" height="6" fill="#2E4F8F"></rect><rect x="13" y="39.500" width="22" height="3.500" rx="1.750" fill="#3D66B5"></rect><rect x="4" y="7" width="40" height="29" rx="6" fill="url(#tvA)"></rect><rect x="8" y="11" width="32" height="21" rx="3" fill="url(#tvB)"></rect><path d="M8 25L24 11h9L8 32z" fill="#FFFFFF" opacity=".45"></path><path d="M15.500 21.500a12 12 0 0 1 17 0" fill="none" stroke="#3D66B5" stroke-width="2.800" stroke-linecap="round"></path><path d="M19.500 25.500a6.300 6.300 0 0 1 9 0" fill="none" stroke="#3D66B5" stroke-width="2.800" stroke-linecap="round"></path><circle cx="24" cy="28.800" r="1.900" fill="#3D66B5"></circle></svg>
+          인터넷·TV
+        </a>
+        
+        <a href="Beauty.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="beA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7A8C0"></stop><stop offset="1" stop-color="#D9497A"></stop></linearGradient></defs><path d="M24 42C10 32 5 24 5 17 5 11 9.500 6.500 15.500 6.500c3.500 0 6.700 1.800 8.500 4.800 1.800-3 5-4.800 8.500-4.800C38.500 6.500 43 11 43 17c0 7-5 15-19 25z" fill="url(#beA)"></path><rect x="21.500" y="15" width="5" height="16" rx="1.500" fill="#fff"></rect><rect x="16" y="20.500" width="16" height="5" rx="1.500" fill="#fff"></rect></svg>
+          뷰티·건강
+        </a>
+        <a href="Moving.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="trA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FC7AC"></stop><stop offset="1" stop-color="#16805F"></stop></linearGradient><linearGradient id="trB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EBC08A"></stop><stop offset="1" stop-color="#C9823F"></stop></linearGradient><linearGradient id="trC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F8FC"></stop><stop offset="1" stop-color="#CFDFF2"></stop></linearGradient><linearGradient id="trD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B6670"></stop><stop offset="1" stop-color="#2F373F"></stop></linearGradient></defs><rect x="2.500" y="11" width="27" height="24" rx="3.500" fill="url(#trA)"></rect><path d="M6 15h20v2.200H6z" fill="#FFFFFF" opacity=".35"></path><path d="M29.500 18h7a3 3 0 0 1 2.400 1.200l5.500 7.300a3 3 0 0 1 .6 1.800V33a2 2 0 0 1-2 2H29.500z" fill="url(#trB)"></path><path d="M32.500 21h3.800a1.500 1.500 0 0 1 1.200.600l3.500 4.900h-8.500z" fill="url(#trC)"></path><circle cx="12" cy="36" r="5.400" fill="url(#trD)"></circle><circle cx="12" cy="36" r="2" fill="#D9DEE2"></circle><circle cx="35" cy="36" r="5.400" fill="url(#trD)"></circle><circle cx="35" cy="36" r="2" fill="#D9DEE2"></circle></svg>
+          이사
+        </a>
+        <a href="Cleaning.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="clA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FC7AC"></stop><stop offset="1" stop-color="#16805F"></stop></linearGradient><linearGradient id="clB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2CF7A"></stop><stop offset="1" stop-color="#D49A3A"></stop></linearGradient></defs><g transform="rotate(35 24 24)"><rect x="22" y="2" width="4" height="22" rx="2" fill="#A07A4F"></rect><path d="M15 24h18l3 19a1.5 1.5 0 0 1-1.5 1.7h-21A1.5 1.5 0 0 1 12 43z" fill="url(#clB)"></path><rect x="14" y="22" width="20" height="7" rx="3" fill="url(#clA)"></rect><path d="M19 32v10M24 32v11M29 32v10" stroke="#B9812E" stroke-width="1.4" stroke-linecap="round"></path></g><path d="M9 7l1.4 3.8L14 12l-3.6 1.2L9 17l-1.4-3.8L4 12l3.6-1.2z" fill="#F5C84C"></path><path d="M40 28l1 2.8 2.8 1-2.8 1L40 36l-1-3.2-2.8-1 2.8-1z" fill="#F5C84C"></path></svg>
+          청소
+        </a>
+        <a href="Plumbing.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="wrA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9DB9DD"></stop><stop offset="1" stop-color="#3D66B5"></stop></linearGradient></defs><path d="M34 3a11 11 0 0 0-10.700 13.500L5.500 34.300a5 5 0 0 0 7.100 7.100L30.500 23.700A11 11 0 0 0 44.300 11L38 17.300l-6-1.300-1.300-6L37 3.500A11 11 0 0 0 34 3z" fill="url(#wrA)"></path><path d="M25.800 17.400L8 35.200" stroke="#FFFFFF" stroke-width="2.400" stroke-linecap="round" opacity=".42"></path><circle cx="9.500" cy="38" r="2" fill="#FFFFFF"></circle></svg>
+          설비·배관
+        </a>
+        <a href="Rent.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="caA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6FC7AC"></stop><stop offset="1" stop-color="#16805F"></stop></linearGradient><linearGradient id="caB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F8FC"></stop><stop offset="1" stop-color="#CFDFF2"></stop></linearGradient><linearGradient id="caC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B6670"></stop><stop offset="1" stop-color="#2F373F"></stop></linearGradient></defs><path d="M10.500 14.500A6 6 0 0 1 16 11h16a6 6 0 0 1 5.500 3.500L41 23H7z" fill="#17694F"></path><path d="M14 15.500a2.500 2.500 0 0 1 2.200-1.500h6.300v8.500H11.500zM25.500 14h6.300a2.500 2.500 0 0 1 2.200 1.500l2.500 7H25.500z" fill="url(#caB)"></path><rect x="3" y="22" width="42" height="15" rx="6" fill="url(#caA)"></rect><path d="M7 26h34" stroke="#FFFFFF" stroke-width="1.800" stroke-linecap="round" opacity=".38"></path><circle cx="10.500" cy="30" r="2.800" fill="#EBC08A"></circle><circle cx="37.500" cy="30" r="2.800" fill="#EBC08A"></circle><rect x="18" y="29" width="12" height="3.500" rx="1.750" fill="#17694F"></rect><rect x="6" y="35.500" width="9" height="7.500" rx="2.500" fill="url(#caC)"></rect><rect x="33" y="35.500" width="9" height="7.500" rx="2.500" fill="url(#caC)"></rect></svg>
+          자동차 렌트/리스
+        </a>
+        <a href="Category.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="weA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D68A"></stop><stop offset="1" stop-color="#C9962E"></stop></linearGradient><linearGradient id="weB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE3EC"></stop><stop offset="1" stop-color="#F29BB8"></stop></linearGradient></defs><circle cx="24" cy="31" r="11" fill="none" stroke="url(#weA)" stroke-width="4.500"></circle><path d="M16.500 10.500L19.500 5h9l3 5.500L24 21z" fill="url(#weB)"></path><path d="M16.500 10.500h15M21 5l3 5.500L27 5M24 21l-3-10.500M24 21l3-10.500" fill="none" stroke="#FFFFFF" stroke-width="1.200" stroke-linejoin="round" opacity=".85"></path></svg>
+          웨딩
+        </a>
+        <a href="Interior.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="deA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB9DD"></stop><stop offset="1" stop-color="#3D66B5"></stop></linearGradient><linearGradient id="deB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#EBC08A"></stop><stop offset="1" stop-color="#C9823F"></stop></linearGradient></defs><g transform="rotate(45 24 24)"><rect x="21" y="12" width="6" height="32" rx="3" fill="url(#deB)"></rect><rect x="9" y="4" width="30" height="13" rx="3.500" fill="url(#deA)"></rect></g></svg>
+          인테리어·철거
+        </a>
+        <a href="Accounting.html" style="padding: 8px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; text-decoration: none">
+          <svg aria-hidden="true" width="54" height="54" viewBox="0 0 48 48"><defs><linearGradient id="laA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D68A"></stop><stop offset="1" stop-color="#C9962E"></stop></linearGradient></defs><rect x="22.500" y="8" width="3" height="31" fill="url(#laA)"></rect><rect x="13" y="38" width="22" height="4.500" rx="2" fill="url(#laA)"></rect><circle cx="24" cy="7" r="3" fill="url(#laA)"></circle><rect x="7" y="12" width="34" height="3" rx="1.500" fill="url(#laA)"></rect><path d="M9 15L3.500 27M9 15l5.500 12M39 15l-5.500 12M39 15l5.500 12" stroke="#C9962E" stroke-width="1.200" fill="none"></path><path d="M2.500 27h13a6.500 6.500 0 0 1-13 0zM32.500 27h13a6.500 6.500 0 0 1-13 0z" fill="url(#laA)"></path></svg>
+          회계·법무
+        </a>
+      </section>
+
+
+      <section style="padding: 36px 40px; border: 0; border-radius: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; background: color-mix(in srgb, var(--accent) 11%, white)">
+        <h1 style="margin: 0; font-size: 34px; line-height: 1.3; font-weight: 700; letter-spacing: -0.02em">인터넷 가입,<br>한 번에 비교하세요</h1>
+        <a href="Internet.html" style="flex: none; height: 64px; box-sizing: border-box; padding: 0 32px; display: flex; align-items: center; gap: 10px; background: var(--accent); color: #FFFFFF; border-radius: 10px; font-size: 19px; font-weight: 700; text-decoration: none">
+          인터넷 비교하러 가기
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 12px">
+        <h2 style="margin: 0; font-size: 22px; font-weight: 700">인기 업체</h2>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+          
+          <a href="https://www.all-pick.kr" target="_blank" rel="noopener" style="min-width: 0; padding: 10px; background: #FFFFFF; border: 1px solid #DDE1DE; border-radius: 14px; display: flex; flex-direction: column; text-decoration: none">
+            <div role="img" aria-label="올픽 배너" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; background: #EEF1EF url('assets/efecb75302bd.jpg') center / cover no-repeat"></div>
+            <div style="padding: 16px 6px 8px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; flex: 1">
+              <span style="font-size: 13px; font-weight: 500; color: #56605A">인터넷 · 올픽</span>
+              <span style="font-size: 17px; font-weight: 700; line-height: 1.4; color: #1E2420">같은 인터넷, 혜택은 다르게</span>
+              <span style="margin-top: auto; padding: 1px 6px; background: #F0F2F0; border-radius: 4px; font-size: 11px; font-weight: 500; color: #7A827D">제휴 링크</span>
+            </div>
+          </a>
+          
+          <a href="https://www.ollaf.co.kr/landing" target="_blank" rel="noopener" style="min-width: 0; padding: 10px; background: #FFFFFF; border: 1px solid #DDE1DE; border-radius: 14px; display: flex; flex-direction: column; text-decoration: none">
+            <div role="img" aria-label="올라프 배너" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; background: #EEF1EF url('assets/7c9f490546c4.jpg') center / cover no-repeat"></div>
+            <div style="padding: 16px 6px 8px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; flex: 1">
+              <span style="font-size: 13px; font-weight: 500; color: #56605A">인터넷 · 올라프</span>
+              <span style="font-size: 17px; font-weight: 700; line-height: 1.4; color: #1E2420">인터넷 가입 상담 접수</span>
+              <span style="margin-top: auto; padding: 1px 6px; background: #F0F2F0; border-radius: 4px; font-size: 11px; font-weight: 500; color: #7A827D">제휴 링크</span>
+            </div>
+          </a>
+          
+          <a href="https://replyalba.com/pt/ASWDVqmoWW" target="_blank" rel="noopener" style="min-width: 0; padding: 10px; background: #FFFFFF; border: 1px solid #DDE1DE; border-radius: 14px; display: flex; flex-direction: column; text-decoration: none">
+            <div role="img" aria-label="중카TV 배너" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; background: #EEF1EF url('assets/b1a048902555.jpg') center / cover no-repeat"></div>
+            <div style="padding: 16px 6px 8px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; flex: 1">
+              <span style="font-size: 13px; font-weight: 500; color: #56605A">자동차 렌트/리스 · 중카TV</span>
+              <span style="font-size: 17px; font-weight: 700; line-height: 1.4; color: #1E2420">신차장기렌트의 모든 것</span>
+              <span style="margin-top: auto; padding: 1px 6px; background: #F0F2F0; border-radius: 4px; font-size: 11px; font-weight: 500; color: #7A827D">제휴 링크</span>
+            </div>
+          </a>
+          
+          <a href="https://replyalba.com/pt/104qSyCknAo" target="_blank" rel="noopener" style="min-width: 0; padding: 10px; background: #FFFFFF; border: 1px solid #DDE1DE; border-radius: 14px; display: flex; flex-direction: column; text-decoration: none">
+            <div role="img" aria-label="전국 웨딩 박람회 일정 배너" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; background: #EEF1EF url('assets/2bde6a9b3926.jpg') center / cover no-repeat"></div>
+            <div style="padding: 16px 6px 8px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; flex: 1">
+              <span style="font-size: 13px; font-weight: 500; color: #56605A">웨딩 · 전국 웨딩 박람회 일정</span>
+              <span style="font-size: 17px; font-weight: 700; line-height: 1.4; color: #1E2420">2026 전국 웨딩/허니문 박람회 일정</span>
+              <span style="margin-top: auto; padding: 1px 6px; background: #F0F2F0; border-radius: 4px; font-size: 11px; font-weight: 500; color: #7A827D">제휴 링크</span>
+            </div>
+          </a>
+          
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer style="margin-top: auto; padding: 32px max(20px, calc((100vw - 1100px) / 2)); background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
+    <strong style="font-size: 12px; font-weight: 600; color: #5F6763">케이엘커넥트</strong>
+    <span>사업자등록번호 305-66-00691 · 제휴 및 일반 문의 klconactkr@gmail.com</span>
+    <span>경기도 오산시 대원로 11, 4층 2호</span>
+    <span>본 사이트는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
+    <a href="Privacy.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">개인정보처리방침</a>
+    <a href="Partner.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">파트너 신청</a>
+  </footer>
+</div>
+</div>
 <template id="dc-tpl">
 
 <div style="--accent: {{accent}}; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
