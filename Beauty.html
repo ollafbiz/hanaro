@@ -17,7 +17,267 @@ a:hover{opacity:.85}
 
 </head>
 <body>
-<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6BCB","#2348C7","#0F4FA8"]},"$preview":{"width":1440,"height":3710}}'></div>
+<div id="app" data-props='{"accent":{"editor":"color","default":"#068A4C","options":["#068A4C","#0B6BCB","#2348C7","#0F4FA8"]},"$preview":{"width":1440,"height":3710}}'>
+
+<div style="--accent: #068A4C; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
+  
+
+  
+  <header style="padding: 0 max(20px, calc((100vw - 1100px) / 2)); border-bottom: 1px solid #E3E6EB">
+    <div style="height: 84px; display: flex; align-items: center; gap: 40px">
+      <a href="index.html" style="font-size: 24px; font-weight: 700; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="4.500" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12c6 0 8 4 8 6v12c0 2 2 4 6 4h6"></path><path d="M4 32h12" stroke-opacity=".4"></path></svg>하나로</a>
+      <form role="search" style="flex: 1; max-width: 720px; height: 52px; box-sizing: border-box; display: flex; border: 2px solid var(--accent); border-radius: 999px; overflow: hidden">
+        <input type="search" aria-label="혜택과 업체 검색" placeholder="필요하신 서비스, 업종 등을 검색해보세요" style="flex: 1; min-width: 0; padding: 0 22px; border: 0; outline-offset: -2px; font: inherit; font-size: 16px; color: #1E2420; background: #FFFFFF">
+        <button type="button" aria-label="검색" style="width: 56px; display: flex; align-items: center; justify-content: center; background: var(--accent); color: #FFFFFF; border: 0; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.500 16.500L21 21"></path></svg></button>
+      </form>
+    </div>
+    <nav aria-label="카테고리" style="margin-left: -16px; display: flex; gap: 4px">
+      <a href="index.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">전체서비스</a>
+      <a href="Internet.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">인터넷·TV</a>
+      <a href="Review.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">계약 인증</a>
+      <a href="Partner.html" style="padding: 12px 16px; font-size: 16px; font-weight: 500; text-decoration: none">파트너 신청</a>
+    </nav>
+  </header>
+
+  <main style="padding: 40px max(20px, calc((100vw - 1100px) / 2)) 80px; display: flex; flex-direction: column; gap: 28px">
+    <h1 style="margin: 0; font-size: 36px; font-weight: 700; letter-spacing: -0.01em">뷰티·건강 혜택</h1>
+
+    <nav aria-label="업종" style="display: flex; flex-wrap: wrap; gap: 0 4px; border-bottom: 1px solid #E3E6EB">
+      <a href="Internet.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">인터넷·TV</a>
+      <a aria-current="page" href="Beauty.html" style="padding: 14px 20px; border-bottom: 3px solid var(--accent); font-size: 16px; font-weight: 700; color: var(--accent); text-decoration: none">뷰티·건강</a>
+      <a href="Moving.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">이사</a>
+      <a href="Cleaning.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">청소</a>
+      <a href="Plumbing.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">설비·배관</a>
+      <a href="Rent.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">자동차 렌트/리스</a>
+      <a href="Category.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">웨딩</a>
+      <a href="Interior.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">인테리어·철거</a>
+      <a href="Accounting.html" style="padding: 14px 20px; border-bottom: 3px solid transparent; font-size: 16px; font-weight: 500; color: #3A4454; text-decoration: none">회계·법무</a>
+    </nav>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr)); gap: 20px; align-items: stretch">
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="신비감 플러스 다이어트 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/c556587a2b9f.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">신비감 플러스 다이어트</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 다이어트</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">숨겨진 체지방을 찾아라! 신비감 플러스</span>
+          <a href="https://dbdbdeep.com/ma/link.php?lncd=S00188057QC06070874A" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="미즈케어 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/2a2a4d8d0867.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">미즈케어</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 영양제</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">6시간 이내 프리미엄 초유 단백질</span>
+          <a href="https://dbdbdeep.com/ma/link.php?lncd=S00111175UC06070893T" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="컷앤컷다이어트 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/de3face0f535.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">컷앤컷다이어트</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 다이어트</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">CMG제약 컷앤컷 다이어트</span>
+          <a href="https://dbdbdeep.com/ma/link.php?lncd=S00257269WC06070903T" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="백세청윤 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/ff179c96e978.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">백세청윤</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">9중 복합 기능성을 한번에, 백세청윤</span>
+          <a href="https://replyalba.com/pt/xBbxFsxdoB" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="사군자 프리미엄 2 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/b00d046b2a67.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">사군자 프리미엄 2</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">진성이 강추하는 전립선 사군자 프리미엄</span>
+          <a href="https://replyalba.com/pt/Ryw6l7SER0" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="더복력 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/198510dc2d6c.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">더복력</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">나를 챙기는 습관, 더복력</span>
+          <a href="https://replyalba.com/pt/CR7UVvSrPU" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="삼성제약 쾌변슬림솔루션 프리미엄 골드 7 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/676c96d489e3.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">삼성제약 쾌변슬림솔루션 프리미엄 골드 7</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">삼성제약 쾌변슬림솔루션 프리미엄 골드</span>
+          <a href="https://replyalba.com/pt/YYMPbQ58ue" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="광동 침향환 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/a32a60c442b3.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">광동 침향환</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">광동 침향환 프리미엄</span>
+          <a href="https://replyalba.com/pt/JVgDrywIJa" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="호관원 프리미엄 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/0c2b3935ecde.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">호관원 프리미엄</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">관절튼튼 프로젝트, 호관원 프리미엄골드</span>
+          <a href="https://replyalba.com/pt/y8gralsVxX" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="남재현 박사의 체지방 다이어트 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/20dd019443a1.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">남재현 박사의 체지방 다이어트</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 다이어트</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">체지방+건강을 한 번에, 올인원 다이어트 솔루션</span>
+          <a href="https://replyalba.com/pt/ZT3SqKGh0K" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="마가보감 프리미엄 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/f38dfb383413.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">마가보감 프리미엄</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">천혜의 섬 울릉도를 한 포에 가득 담았다</span>
+          <a href="https://replyalba.com/pt/GO4gTHvY3j" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="광동 맑은365 면역보감 더 프리미엄 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/387df645b356.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">광동 맑은365 면역보감 더 프리미엄</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">홍삼·프로폴리스·아연 등 34가지를 액상형으로 한번에</span>
+          <a href="https://replyalba.com/pt/G1AnalQynL" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="골든실크홍잠 천수복 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/15e8e73d0bea.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">골든실크홍잠 천수복</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">농촌진흥청 특허 기술이전, 골든실크홍잠 천수복</span>
+          <a href="https://replyalba.com/pt/RzBHKxCQW7" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="광동 맑은365 면역보감 로얄 프리미엄 진 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/cf3dc7e24a21.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">광동 맑은365 면역보감 로얄 프리미엄 진</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">더욱 진화된 면역보감 로얄 프리미엄 진(眞)</span>
+          <a href="https://replyalba.com/pt/z8dRlw9XM5" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="맨즈텐 MAX 프리미엄 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/23ffbaf314ab.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">맨즈텐 MAX 프리미엄</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 건강기능식품</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">남성 건강 토탈 케어 프로세스, 맨즈텐 MAX 프리미엄</span>
+          <a href="https://replyalba.com/pt/YsLEKbHdz8" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="브이맥스 블랙 2 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/4a4d2be1dfed.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">브이맥스 블랙 2</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 활력 케어</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">체내 에너지 생성 및 대사 · 지구력 증진 · 면역기능</span>
+          <a href="https://replyalba.com/pt/OogIRU7tU9" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="슬림웨이 다이어트 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/b043616d7b64.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">슬림웨이 다이어트</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 다이어트</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">체지방 DOWN · 배변활동 원활 · 촉촉 피부보습</span>
+          <a href="https://replyalba.com/pt/AwDonzh2PQ" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="컷앤컷 다이어트 2 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/2c8f3bbf95ca.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">컷앤컷 다이어트 2</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 다이어트</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">CMG제약 컷앤컷 다이어트</span>
+          <a href="https://replyalba.com/pt/D9EVdI2dvl" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+        <article style="padding: 24px; border: 1px solid #E3E6EB; border-radius: 12px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+          <div role="img" aria-label="타바톡스 배너" style="display: block; aspect-ratio: 1 / 1; border-radius: 8px; background: #EEF1EF url('assets/9d4a6ea456da.jpg') center / cover no-repeat"></div>
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px">
+            <span style="min-height: 50px; font-size: 18px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">타바톡스</span>
+            <span style="flex: none; padding: 3px 8px; background: #EEF0F3; border-radius: 6px; font-size: 12px; font-weight: 600; color: #4A5464">제휴 링크</span>
+          </div>
+          <span style="font-size: 14px; line-height: 1.4; color: #566072; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">건강 · 금연 케어</span>
+          <span style="min-height: 46px; font-size: 16px; font-weight: 600; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden">흡연 습관 그대로 금연에 성공하는 프리미엄 필터</span>
+          <a href="https://replyalba.com/pt/SeA9IFv8zJ" target="_blank" rel="noopener" style="margin-top: auto; height: 48px; display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 10%, white); color: var(--accent); border-radius: 12px; font-size: 15px; font-weight: 700; text-decoration: none">자세히 보기</a>
+        </article>
+      
+    </div>
+  </main>
+
+  <footer style="margin-top: auto; padding: 40px max(20px, calc((100vw - 1100px) / 2)); background: #FFFFFF; border-top: 1px solid #DDE1DE; display: flex; flex-direction: column; gap: 6px; font-size: 12px; line-height: 1.6; color: #5F6763">
+    <strong style="font-size: 12px; font-weight: 600; color: #5F6763">케이엘커넥트</strong>
+    <span>사업자등록번호 305-66-00691 · 제휴 및 일반 문의 klconactkr@gmail.com</span>
+    <span>경기도 오산시 대원로 11, 4층 2호</span>
+    <span>본 사이트는 제휴 링크를 통해 수수료를 받을 수 있습니다.</span>
+    <a href="Privacy.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">개인정보처리방침</a>
+    <a href="Partner.html" style="align-self: flex-start; padding: 6px 0; font-weight: 600">파트너 신청</a>
+  </footer>
+</div>
+</div>
 <template id="dc-tpl">
 
 <div style="--accent: {{accent}}; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFFFF; color: #1E2420; font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; word-break: keep-all">
@@ -90,10 +350,6 @@ class Component extends DCLogic {
       reload: () => { const k = Object.keys(this.state || {}); this.setState(k.reduce((o, key) => { o[key] = undefined; return o; }, {})); window.scrollTo(0, 0); },
       accent: this.props.accent ?? '#068A4C',
       places: [
-        { name: '목주름 콜라겐 주사', area: '뷰티 · 피부 관리', benefit: '목주름 콜라겐 주사 이벤트 44만원', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00280807JC06070827F', img: 'assets/3b832916ffc0.jpg' },
-        { name: '힙딥', area: '뷰티 · 바디 관리', benefit: '바디 콜라겐 주사 이벤트 330만원', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00281245DC06070833E', img: 'assets/0628f1a51e3d.jpg' },
-        { name: '안면거상', area: '뷰티 · 피부 관리', benefit: '젊은 날의 아름다움으로, 안면거상', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00280410BC06070848R', img: 'assets/eacedf5758f1.jpg' },
-        { name: '5세대 콜라겐주사2', area: '뷰티 · 피부 관리', benefit: '자가 콜라겐 생성으로 속부터 차오르는 볼륨감', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00280088XC06070857R', img: 'assets/1839d758e466.jpg' },
         { name: '신비감 플러스 다이어트', area: '건강 · 다이어트', benefit: '숨겨진 체지방을 찾아라! 신비감 플러스', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00188057QC06070874A', img: 'assets/c556587a2b9f.jpg' },
         { name: '미즈케어', area: '건강 · 영양제', benefit: '6시간 이내 프리미엄 초유 단백질', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00111175UC06070893T', img: 'assets/2a2a4d8d0867.jpg' },
         { name: '컷앤컷다이어트', area: '건강 · 다이어트', benefit: 'CMG제약 컷앤컷 다이어트', url: 'https://dbdbdeep.com/ma/link.php?lncd=S00257269WC06070903T', img: 'assets/de3face0f535.jpg' },
