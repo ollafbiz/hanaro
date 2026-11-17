@@ -36,7 +36,11 @@ async function forwardToOffice(b, phoneHyphen) {
         serviceType: str(b.serviceType || b.source || '상담신청'),
         serviceDetail: str(b.serviceDetail || b.interest || '(선택 상품 없음)'),
         memo: str(b.memo),
-        site: SITE_ID
+        site: SITE_ID,
+        firstKeyword: str(b.firstKeyword),
+        firstSource: str(b.firstSource),
+        firstReferrer: str(b.firstReferrer),
+        firstLandingUrl: str(b.firstLandingUrl)
       }),
       signal: ctrl.signal
     });
@@ -56,6 +60,7 @@ async function sendMail(b, phoneHyphen) {
   const rows = [
     ['접수 경로', b.source], ['이름', b.name || '(미입력)'], ['연락처', phoneHyphen],
     ['통신사', b.carrier || '-'], ['선택 상품', b.serviceDetail || b.interest || '-'], ['문의 내용', b.memo || b.message || '(없음)'],
+    ['첫유입검색어', b.firstKeyword || '-'], ['첫유입경로', b.firstSource || '-'],
     ['유입 페이지', b.pageUrl], ['이전 페이지', b.referrer || '-'], ['utm_source', b.utm_source || '-'],
     ['접수 시각', new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })]
   ];
