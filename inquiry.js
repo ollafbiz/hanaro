@@ -45,6 +45,35 @@ export function fmtPhone(v) {
   return d.slice(0, 3) + '-' + d.slice(3, d.length - 4) + '-' + d.slice(-4);
 }
 
+// ALADMIN t.js 가 심어둔 첫유입 정보 (검색어/유입경로) 꺼내기
+function readFirstTouch() {
+  try {
+    if (window.aladmin && typeof window.aladmin.getFirstTouch === 'function') {
+      const ft = window.aladmin.getFirstTouch();
+      return {
+        firstKeyword: String(ft.keyword || '').slice(0, 100),
+        firstSource: String(ft.source || '').slice(0, 100),
+        firstReferrer: String(ft.referrer || '').slice(0, 300),
+        firstLandingUrl: String(ft.landingUrl || '').slice(0, 500)
+      };
+    }
+  } catch (e) {}
+  // fallback — 현재 URL 파라미터만이라도
+  try {
+    const qs = new URLSearchParams(location.search);
+    const kw = qs.get('n_query') || qs.get('n_keyword') || qs.get('utm_term') || qs.get('keyword') || qs.get('q') || '';
+    let src = '';
+    if (qs.get('n_media') || qs.get('n_keyword')) src = 'naver_ad';
+    else if (qs.get('gclid')) src = 'google_ad';
+    else if (qs.get('utm_source')) src = qs.get('utm_source');
+    else if (document.referrer) { try { src = new URL(document.referrer).hostname; } catch (e) { src = 'referrer'; } }
+    else src = 'direct';
+    return { firstKeyword: kw, firstSource: src, firstReferrer: document.referrer || '', firstLandingUrl: location.href };
+  } catch (e) {
+    return { firstKeyword: '', firstSource: '', firstReferrer: '', firstLandingUrl: '' };
+  }
+}
+
 /**
  * 상담 접수
  * @param {object} p
@@ -62,6 +91,7 @@ export async function submitInquiry(p) {
   const phone = digits(p.phone);
   const qs = new URLSearchParams(location.search);
   const message = [p.memo, p.detail ? '선택 조건: ' + p.detail : ''].filter(Boolean).join('\n');
+  const first = readFirstTouch();
 
   const data = {
     name: String(p.name || '').slice(0, 50),
@@ -73,7 +103,11 @@ export async function submitInquiry(p) {
     referrer: document.referrer || '',
     utm_source: qs.get('utm_source') || '',
     status: 'pending',
-    site: SITE_ID
+    site: SITE_ID,
+    firstKeyword: first.firstKeyword,
+    firstSource: first.firstSource,
+    firstReferrer: first.firstReferrer,
+    firstLandingUrl: first.firstLandingUrl
   };
 
   // 관리 프로그램용 필드
